@@ -1,0 +1,211 @@
+{% include 'header.html' %}
+{% include 'nav.html' %}
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-7 connectedSortable">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="card">
+              <div class="card-body">
+                <table  class="table table-hover text-left">
+                <tbody>
+                    <tr>
+                        <td>Username</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Sponsor<br>Username</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Name</td>
+                    </tr>
+                     <tr>
+                        <td>Affiliated<br>Link</td>
+                        <td>Link name</td>
+                    </tr>
+                </tbody>
+        </table>  
+              </div><!-- /.card-body -->
+              <div class="card-footer">Footer</div>
+            </div>
+            <!-- /.card -->
+          </section>
+          <!-- /.Left col -->
+          <!-- right col (We are only adding the ID to make the widgets sortable)-->
+          <section class="col-lg-5 connectedSortable">
+             <div class="card">
+              <div class="card-body">
+                <table  class="table table-hover text-left">
+                <thead>
+                   <tr>
+                        <th>Account<br>Balance</th>
+                        <th>Bots Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Last Earned</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Lifetime ROI</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Lifetime Commision</td>
+                        <td>0</td>
+                    </tr>
+                     <tr>
+                        <td>Lifetime Rewards</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+        </table>  
+              </div><!-- /.card-body -->
+            </div>
+          </section>
+           <section class="col-lg-12 connectedSortable">
+             <div class="card">
+              <div class="card-body">
+                <div class="row main-row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 first-column">
+            <div>
+              <img src="partners.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+                    <br>
+              <p class="p-tag">Registered Partners</p>
+            </div>
+            <div>
+              <img src="partner.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Direct Partners</p>
+            </div>
+            <div>
+              <img src="partner.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Active Partners</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 first-column">
+            <div>
+              <img src="analytics.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Structure Sale</p>
+            </div>
+            <div>
+              <img src="analytics.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Personal Sale</p>
+            </div>
+            <div>
+              <img src="meeting-point.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Direct Active</p>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 first-column">
+            <div>
+              <img src="files.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Amount In</p>
+            </div>
+            <div>
+              <img src="files.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Amount Invested</p>
+            </div>
+            <div>
+              <img src="invesment.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Matured Investment</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 first-column">
+            <div>
+              <img src="investing.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Amount Out</p>
+            </div>
+            <div>
+              <img src="withdrawal.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Active Investment</p>
+            </div>
+            <div>
+              <img src="withdrawal.png" alt="" class="wdth-img2">
+              <span class="fnt-bold" id="total_members">0</span>
+              <br>
+              <p class="p-tag">Amount Withdraw</p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+              </div><!-- /.card-body -->
+            </div>
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.5
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+{% include 'footer.html' %}

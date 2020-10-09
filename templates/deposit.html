@@ -1,0 +1,75 @@
+{% include 'header.html' %}
+{% include 'nav.html' %}
+{% load static %}
+<div class="wrapper">
+	<div class="content-wrapper">
+	 	<section class="content">
+	 		<div class="container-fluid">
+	 			<section class="col-lg-12 connectedSortable" style="padding-top:20px;">
+	 				<div class="card">
+                        <div class="card-body">
+                        	<div class="container">
+                        		<div class="row" style="display:flex;align-items:center;">
+                        			<div class="col-md-12" style="text-align:center;">
+                        				<h4>Select your Deposit Method Here</h4>
+                        			</div>
+                        			<div class="col-md-6 deposite_image_fields" onclick="payment_fields(this)">
+                        				<img src="{% static 'images/bitcoin.png' %}" alt="bitcoin" style="width:150px;margin-left:50px;">
+                        			</div>
+                        			<div class="col-md-6 deposite_image_fields" onclick="payment_fields(this)">
+                        				<img src="{% static 'images/pmoney.png' %}" alt="bitcoin" style="width:180px;margin-left:50px;">
+                        			</div>
+                        			<div class="col-md-12 payment_fields_div" id="payment_fields_div" style="display:none;">
+                        				<div class="btc" id="btc">
+	
+	<div class="step_1" id="step_1">
+		<form>
+			<div class="payment_container">
+				<div class="row payment_container_inner" style="padding-top:10px">
+					<div class="col-md-12">
+						<p id="exchange_rate_div" style="text-align:center;">Exchange Rate : 1 BTC     = <span id="btc_rate">10724.53</span> USD </p>
+						<input type="hidden" name="btc_rate">
+						<input type="hidden" name="payment_processor" id="payment_processor">
+					</div>
+				</div>
+				<div class="row margin_left">
+					<div class="col-md-6 form-group">
+						<div class="row payment_container_inner">
+							<label class="col-md-6 text-right payment_input_label" for="exampleInputEmail1">Amount to Deposit:</label>
+							<input type="text" name="usd_amount" class="col-md-6" placeholder="$">
+						</div>
+					</div>
+					<div class="col-md-6 form-group" style="display: block;">
+						<div class="row payment_container_inner">
+							<label class="col-md-6 text-right payment_input_label" for="btc_usd">Value In BTC:</label>
+							<input type="text" class="col-md-6" name="btcusd" disabled="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="text-align:center;">
+				<div class="col-md-12 form-group" style="margin-top:20px;">
+					<input type="submit" class="btn btn-block btn-primary col-md-4" value="Continue" style="margin: auto; background-color:#00A6FF;border:0px;">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </div>
+	 			</section>
+            </div>
+        </section>
+	</div>
+</div>
+<footer class="main-footer">
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.5
+    </div>
+</footer>
+{% include 'footer.html' %}
